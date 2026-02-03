@@ -1,0 +1,3 @@
+# inbox.md
+## Ideas
+- (empty)
