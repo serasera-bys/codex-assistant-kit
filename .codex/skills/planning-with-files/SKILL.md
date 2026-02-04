@@ -18,6 +18,12 @@ description: Use task_plan.md/findings.md/progress.md as durable memory. Enforce
 4) Never repeat the same failing action.
    - Log error + attempt # in progress.md and findings.md.
 
+## Light mode (small tasks)
+If the task is small (<=3 steps or <=10 minutes), update progress.md only at milestones and skip task_plan.md refresh unless assumptions changed.
+
+## Definitions
+Same failing action = same command or edit applied to the same file/line area with the same inputs.
+
 ## Templates (minimum)
 
 ### task_plan.md must contain
@@ -38,3 +44,4 @@ description: Use task_plan.md/findings.md/progress.md as durable memory. Enforce
 
 ## Execution gate
 Still require GO before running commands or editing files.
+If another skill also requires GO, follow the strictest gate.

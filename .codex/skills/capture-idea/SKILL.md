@@ -17,4 +17,5 @@ Then reply with:
 2) The next action only
 
 Do not expand into a full project plan unless asked.
-No tool suggestions.
+No tool suggestions unless the user explicitly asks.
+Tags should be short and consistent (e.g., #work #ros #docs).
